@@ -1,7 +1,7 @@
 <div class="article">
     <div class="article-header">
         <div class="breadcrumbs">
-            <a href="#" title="Home">Home</a> >
+            <a href="?a=home" title="Home">Home</a> >
             <a href="#" title="Ferramentas de organização">Ferramentas de organização</a> >
             <a href="#" title="checklist"><span>Checklists</span></a>
         </div>
@@ -87,16 +87,21 @@
         </div>
         <br>
         <div class="row-center">
-            <ul class="pagination pagination-sm justify-content-center">
-                <li class="page-item"><a class="page-link" href="#">
-                        <<< /a>
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        << </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">>></a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#"> >> </a>
+                </li>
             </ul>
         </div>
     </div>
 
     <div class="article-comments">
+
+        <!-- DISQUS -->
         <div id="disqus_thread"></div>
         <script>
             /**
@@ -117,6 +122,8 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <!-- FIM DISQUS -->
     </div>
 
 
