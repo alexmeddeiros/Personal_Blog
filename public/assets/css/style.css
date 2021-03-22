@@ -1,0 +1,1182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.orange{
+    color: #ff642e;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #ff642e;
+}
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+    clear: both;
+    margin-top: 120px;
+    width: 100%;
+    height: auto;
+    
+}
+
+/* ------------------------- HEADER ----------------------------- */
+.header {
+    position: relative;
+    clear: both;
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 400;
+    font-size: 1.2em;
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-bottom:1px solid #dfdee0;
+    -webkit-box-shadow: 0px 2px 25px -4px rgb(179, 177, 179);
+    -moz-box-shadow: 0px 2px 25px -4px rgba(179, 177, 179);
+    box-shadow: 0px 2px 25px -4px rgba(179, 177, 179);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    /* width: 75%; */
+} 
+    .header-box{
+        width: 72%;
+        margin: 0 auto;
+    }
+        .row-box{
+            float: left;
+        }
+            .logo{
+                display: block;
+                width: 60px;
+                float: left;
+                margin: 10px auto;
+            }
+
+        /* Estilo do menu */
+        .nav{
+            display: block;
+            float: right;
+            font-size: 5vw;
+            font-weight: 500;
+            width: 80%;
+            height:50px;
+            text-align: right;
+            
+        }
+            .nav-list{
+				padding-top: 5px;
+				width: 100%;
+				float: right;
+				height: 65px;
+			}
+                .nav-item{
+                    display: inline-block; /*o IE antigo nao reconhece o INLINE display*/
+                    list-style-type: none;
+                    padding: 10px;
+                }
+                    .nav-item a{   
+                        display: block;   
+                        text-decoration: none; 
+                        color: #4d4957; 
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 100;       
+                    }
+                    .nav-item a:hover{
+                        text-decoration: none; 
+                        color:#1c1c1d;  
+                    }
+                    .fa-search{
+                        font-weight: 200;
+                    }
+                    .search{
+                        display: none;
+                        padding: 12px 0;
+                        color: #4d4957;
+                        font-family: 'Oswald', sans-serif;
+                        
+                    }
+                    .toggle{
+                        width: 100%;
+                        padding: 12px 0px;
+                        font-size: 25px;
+                        text-align: right;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        display: none;
+                        color: #4d4957;
+                    }
+        .box-search{
+            display:none;
+        }
+
+/* Responsive Nav */
+
+/* ---------------------- FIM HEADER ---------------------------- */
+
+
+/* -------------------------- MAIN ------------------------------ */
+.main{
+    display: block;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin: 100px auto;
+}
+section{
+    width: 100%;
+    height: auto;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+}
+    /* ------------------------ SIDEBAR ----------------------------- */
+    .sidebar{
+        float: left;
+        width: 20%;
+    }
+        .owner_img{
+            width: 75%;
+        }
+        .sidebar_list{
+            width: 90%;
+            margin: 0 auto;
+            margin-top:20px;
+            color: #4d4957;
+        }
+            .sidebar-item{
+                text-decoration: none;
+                list-style-type: none;
+                text-align: left;
+            }
+                .sidebar-item a{
+                    color: #4d4957;
+                    font-size: 1.6vw;
+                    font-weight: 200;
+                }
+                .sidebar-item a:hover{
+                    color: #1c1c1d;
+                    font-size: 1.6vw;
+                    text-decoration: none;
+                }
+        .sidebar-select{
+            margin-top: 100px;
+            width: 90%;
+        }
+            .sidebar-select h5{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.1vw;
+                color: #4d4957;
+            }
+            .form{
+                width: 90%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1vw;
+                padding: 2px 0;
+                color: #3a393d;
+            }
+    /* ---------------------- FIM SIDEBAR -------------------------- */
+    /* ------------------------ ARTICLE ---------------------------- */
+
+    .article {
+        float: right;
+        padding: 5px;
+        width: 75%;
+        height: auto; /* only for demonstration, should be removed */
+    }
+        .article h4{
+            font-family: 'Quattrocento', sans-serif;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .article p{
+            font-family: 'Quattrocento', sans-serif;
+                text-align: justify;
+                font-size: 1.2vw;
+        }
+        .article-card{
+            width:95%;
+            height: 200px;
+            -webkit-box-shadow: 6px 6px 13px -6px rgba(109, 108, 108, 0.75);
+            -moz-box-shadow: 6px 6px 13px -6px rgba(109, 108, 108, 0.75);
+            box-shadow: 6px 6px 13px -6px rgba(109, 108, 108, 0.75);
+            border:1px solid #f3f3f3;
+            margin-bottom: 20px;
+        }
+            .article-card img{
+                width:38%;
+                height: 199px;
+                float: left;
+            }
+            .card-info{
+                width: 60%;
+                float: right;
+                padding: 0 5px 0 0;
+
+            }
+                .card-title{
+                    text-align: left;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 200;
+                    font-size: 20px;
+                    color:#ff642e;
+                }
+                    .card-title a{
+                        color:#ff642e;
+                        text-decoration: none;
+                    }
+                    .card-title a:hover{
+                        color:#d84712;
+                        text-decoration: none;
+                    }
+                .card-info-foo{
+                    padding: 0 5px 5px 0;
+                    font-size: 1vw;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 200;
+                }
+                    .card-info-foo .gray{
+                        color: #7f7d85;
+                        font-size: 0.9vw
+
+                    }
+                    .card-comment{
+                        float: right;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 12px;
+                    }
+            .card-short{
+                margin-bottom: 5px;
+            }
+                .card-short p{
+                    font-family: 'Quattrocento', sans-serif;
+                    text-align: justify;
+                    font-size: 1.2vw;
+                    padding: 0;
+                    margin: 0;
+                }
+            .btn-read{
+                border:1px solid #dbdbdb;
+                float: left;
+                font-family: 'Quattrocento', sans-serif;
+                font-size: 15px;
+                background: none;
+                width: 100px;
+                padding: 0 5px 0 5px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+                .btn-read:hover{
+                    border:1px solid #d1cfcf;
+                    float: left;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    border-radius: 50px;
+                    -webkit-box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+                    -moz-box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+                    box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+                }
+                .tags{
+                    padding-top: 10px;
+                    width: 100%;
+                    float: left;
+                    font-family: 'Quattrocento', sans-serif;
+                    font-size:10px;
+                    overflow: hidden;
+                }
+                    .tags a{
+                        font-family: 'Quattrocento', sans-serif;
+                        font-size:12px;
+                        color:#a09f9f; 
+                    }
+                    .tags a:hover{
+                        font-family: 'Quattrocento', sans-serif;
+                        font-size:12px;
+                        color:#ff642e;
+                    }
+    /* ---------------------- FIM ARTICLE -------------------------- */
+
+
+/* ------------------------- FOOTER --------------------------- */
+
+.footer{
+    clear: both;
+    width: 100%;
+    background-color: #000000;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer p{
+    color: #a6a5a7;
+    font-size: 12px;
+}
+.foo{
+    padding-top: 50px;
+    width: 80%;
+    color: aliceblue;
+    margin: 0 auto;
+    height: auto;
+    background-color: #000000;
+}
+
+.credit{
+    clear: both;
+    background: #232325;
+    width: 100%;
+    padding-top: 5px;
+    height: 25px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #b3b2b5;
+}
+.foo_title{
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #4d4957;
+}
+/* About */
+.about{
+    padding-bottom: 20px;
+}
+.about_logo{
+    width: 20%;
+    float: left;
+}
+.abou_info{
+    width: 100%;
+
+}
+.about_logo img{
+    width: 60px;
+    display: block;
+    padding-top:50px;
+    margin: 0 auto;
+}
+
+.about_desc{
+    display: block;
+    float: right;
+    width: 75%;
+
+}
+.about_desc a{
+    color:#f7592c;
+}
+.about_desc a:hover{
+    color:#f7592c;
+} 
+/* fim Footer About =======================================================================*/
+/* Views ===========================================================================*/
+
+/* newsletter */
+.newsletter{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+.newsletter button{
+    margin: 10px
+}
+    form{
+        align-content: center;
+    }
+    .btn-sub-box{
+        width: 150px;
+        margin: 10px auto;
+    }
+.newsletter form .btn-sub{
+    clear: both;
+}
+.field{
+    padding: 0 10px 0 10px;
+}
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
+/* fim newsletter */
+
+/* Follow */
+.follow{
+    padding-bottom: 20px;
+}
+.follow_links{
+    padding: 0 20px 0 20px;
+}
+.follow_links li{
+    list-style-type: none;
+    text-align: center;
+}
+.follow_links li a {
+    color: #a6a5a7;
+}
+.follow_links li a:hover {
+    color: #ffffff;
+}
+/* Fim follow */
+/* ----------------------- FIM FOOTER ------------------------- */
+
+
+/* PAGES */
+/* =============== About */
+.article h1{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 2vw;
+}
+    .article h1 span{
+        font-weight: 200;
+    }
+.skills{
+    margin-top: 50px;
+    width:80%;
+}
+    .skills h2{
+        font-family: 'Oswald', sans-serif;
+    }
+
+.table{
+    font-family: 'Quattrocento', sans-serif;
+    font-weight: 400;
+}
+.table td{
+    text-align: center;
+}
+.table th{
+    widows: 10%;
+}
+    .table .progress-bars{
+        text-align: left;
+        width:50%;
+        margin: 0 auto;
+    }
+/* FIM PAGE ABOUT */
+/* =============== Views */
+
+.breadcrumbs{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: #b3b2b5;
+}
+    .breadcrumbs a{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        color: #b3b2b5;
+    }
+    .breadcrumbs a:hover{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        color: #ff642e;
+    }
+        .breadcrumbs span{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+        }
+.article-tags{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.article-list{
+    width: 100%;
+}
+.article-share{
+    width: 100%;
+    margin: 50px 0 50px 0;
+}
+    .share-itens{
+        display: inline-block;
+        list-style-type: none;
+        border:1px solid #ece9f0;
+        width:40px;
+        height:40px;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+        .share-itens a{
+            color: #666466;
+        }
+        .share-itens a:hover{
+            color: #313031;
+        }
+.article-img{
+    margin:10px 0;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+    .article-img img{
+        width: 100%;
+        height:auto;
+    }
+
+.article-related{
+
+}
+    .article-related a:hover{
+        text-decoration: none;
+    }
+    .article-related h3{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        color: #666466;
+        font-size: 1.5vw;
+    }
+    .article-related h3:hover{
+        color: #b4b1b4;
+    }   
+    .article-related h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        color: #666466;
+    }
+        .article-related span{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+        }
+    .article-related img{
+        width:100%;
+        height:150px;
+    }
+.article-comments{
+    margin-top: 50px;
+}
+/* FIM PAGE VIEW */
+
+/* PAGE WORK */
+.article a:hover{
+    text-decoration: none;
+    color: #e2440a;
+}
+    .work-card-box{
+        padding: 20px;
+    }
+        .work-card{
+            margin: 10px;
+            width: 40%;
+            height:auto;
+            border:1px solid #e7e5e5;
+            -webkit-box-shadow: 0px 2px 25px -4px rgb(179, 177, 179);
+            -moz-box-shadow: 0px 2px 25px -4px rgba(179, 177, 179);
+            box-shadow: 0px 2px 25px -4px rgba(179, 177, 179);
+        }
+        .work-card:hover{
+            border:1px solid #f8f6f6;
+            box-shadow: none;
+        }
+            .work-card img{
+                border-right:10px solid #e2440a;
+                float:left;
+                width: 40%;
+                height: 100%;
+                margin-left:-15px;
+                
+            }
+            .work-card-info{
+                float: right;
+                width: 60%;
+            }
+            .work-card-info h5{
+                font-family: 'Oswald', sans-serif; 
+                font-weight: 100;
+                font-size: 1.6vw;
+                text-align: center;
+            }
+                .work-card h5 span{
+                    font-family: 'Oswald', sans-serif; 
+                    font-weight: 400;
+                }
+
+            .work-card-info .btn-read{
+                display: block;
+                margin: 0 auto;
+                float: none;
+            }
+/* FIM PAGE VIEW */
+/* PAGE CONTACT */
+.contact-box {
+    width: 100%;
+    
+  }
+    .form-title{
+        font-family: 'Oswald', sans-serif; 
+        font-weight: 100;
+    }
+  .form-contact {
+    width: 50%;
+    
+  }
+  
+  .form-contact-input {
+    width: 100%;
+    color: #292929;
+    font-family: 'Quattrocento', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #E9E9E9;
+    text-indent: 20px;
+  }
+  
+  .form-contact-textarea {
+    width: 100%;
+    color: #292929;
+    font-family: 'Quattrocento', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border: 1px solid #E9E9E9;
+    height: 200px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .form-contact-button {
+    border:1px solid #dbdbdb;
+    font-family: 'Quattrocento', sans-serif;
+    font-size: 15px;
+    background: none;
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .form-contact-button:hover {
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+    box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+  }
+  
+  .form-contact-button:hover {
+    opacity: 1;
+  }
+
+  /* FIM PAGE CONTACT */
+
+  /* PAGE NEWSLETTER */
+  .form-news{
+    font-family: 'Quattrocento', sans-serif;
+    width: 80%;
+    color: #7f7d85;
+    padding: 0;
+  }
+
+  .form-news .form-contact-button {
+      display: block;
+    border:1px solid #dbdbdb;
+    font-family: 'Quattrocento', sans-serif;
+    font-size: 15px;
+    background: none;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0 15px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .form-contact-button:hover {
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+    box-shadow: 0px 0px 3px 3px rgba(150,141,150,0.13);
+  }
+  
+  .form-contact-button:hover {
+    opacity: 1;
+  }
+
+  /* FIM PAGE NEWSLETTER */
+  /* PAGE ARTICLE */
+
+  .box-article{
+      margin-top:15px;
+  }
+
+  .article-list{
+    margin-left:0;
+  }
+    .article-itens{
+        display: inline-block;
+        color: #E9E9E9;
+        font-family: 'Quattrocento', sans-serif;
+        font-size: 12px;
+        border:1px solid #c9c9ca;
+        padding: 0 10px 0 10px;
+
+    }
+    .article-itens:hover{
+        background-color: #5e5c5c;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+
+    }
+    .article-itens a{
+        color: rgb(82, 80, 80);
+    }
+    .article-itens a:hover{
+        color: rgb(255, 255, 255);
+    }
+
+    .article-title{
+        width: 50%;
+        font-family: 'Quattrocento', sans-serif;
+        font-size: 12px;
+        padding-left: 5px;
+        float: right;
+    }
+        .article-title .gray{
+            color: #7f7f81;
+        }
+    .article-row{
+        margin-bottom: 15px;
+    }
+        .article-col{
+            margin-bottom: 15px;
+        }
+        .article-col img{
+        width:50%;
+        float: left;
+    }   
+    .article-title h5{
+        font-family: 'Quattrocento', sans-serif;
+        font-size: 14px;
+    }
+    .article-title h5 a{
+        font-family: 'Quattrocento', sans-serif;
+        color: #7f7f81;
+    }
+  /* FIM PAGE ARTICLE */
+
+@media(min-width: 480px){
+    .nav{
+        display: block;
+        float: right;
+        overflow: hidden;
+        font-size: 1em;
+        font-weight: 500;
+        width: 80%;
+        height:50px;
+        text-align: right;
+        
+    }
+    .nav{
+        display: none;
+        
+    }
+    
+}
+
+@media(max-width: 768px){
+    
+    .header {
+        clear: both;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        background-color: #f4f4f4;
+        border-bottom:1px solid #dfdee0;
+        -webkit-box-shadow: 0px 2px 25px -4px rgb(179, 177, 179);
+        -moz-box-shadow: 0px 2px 25px -4px rgba(179, 177, 179);
+        box-shadow: 0px 2px 25px -4px rgba(179, 177, 179);
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        
+    }
+    .row-box{
+        float: none;
+        height: 60px;
+    }
+        .logo{
+            display: block;
+            width: 60px;
+            float: none;
+            margin: 10px auto;
+        }
+        .logo img{
+            display: block;
+            width: 60px;
+            margin: 0 auto;           
+        }
+        .search{
+            cursor: pointer;
+            display: block;
+            float: left;
+        }
+        .toggle{
+            display: block;
+            float: right;
+        }
+    .box-search{
+        padding-top: 80px;
+        display: none;
+        height: 300px;
+    }
+        .search-label{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 100;
+            font-size: 18px;
+            color: #4d4957;
+            margin: 0 auto;
+            display: block;
+        }
+        
+    .nav{
+        display: block;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+        .nav-list{
+            width: 100%;
+            display: none;
+            height: 280px;
+        }
+        .nav-item{
+            float: none;
+            display: block;
+            text-align: center;
+        }
+        .nav-item:last-child{
+            border-bottom: none;
+            display: none;
+        }
+    .active{
+        display: block;
+    }
+    .main{
+        width: 90%;
+        padding: 0;
+        margin: 100px auto;
+    }
+    .sidebar{
+        display: none;
+    }
+    .article {
+        width: 100%;
+        float:none;
+        padding: 0;
+    }
+        /* Cards */
+        .article-card{
+            height: 150px;
+            margin: 10px auto;
+        }
+        .article-card img{
+            width:38%;
+            height: 150px;
+            margin: 0;
+            padding: 0;
+        }
+        .btn-read{
+            display: none;
+            float:left;
+        }
+        .card-title{
+            font-size: 5vw;
+        }
+        .card-short{
+            display: none;
+        }
+        .card-info-foo{
+            padding: 0 5px 5px 0;
+            font-size: 2.5vw;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+        }
+            .card-info-foo .gray{
+                color: #7f7d85;
+                font-size: 2.5vw;
+                padding-top: -5px;
+                display: inline-block;
+            }
+            .tags{
+                margin-top: -35px;
+            }
+                .autor{
+                    
+                }
+                .card-comment{
+                    padding-top:-10px;
+                }
+    .article h1{
+        font-family: 'Oswald', sans-serif; 
+        margin-left: 15px;
+    }
+        .article h1 span{
+            font-weight: 200;
+        }
+        .article h4{
+            font-family: 'Quattrocento', sans-serif;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .article p{
+            font-family: 'Quattrocento', sans-serif;
+                text-align: justify;
+                font-size: 18px;
+        }
+        .skills{
+            float: none;
+            width:100%;
+        }
+        
+
+    /* WORK ========*/
+    .work-card-box{
+        
+    }
+        .work-card-info h5{
+            font-family: 'Oswald', sans-serif; 
+            font-weight: 100;
+            font-size: 4vw;
+            text-align: center;
+        }
+            .work-card h5 span{
+                font-family: 'Oswald', sans-serif; 
+                font-weight: 400;
+            }
+
+            .work-card img{
+                border-right:10px solid #e2440a;
+                float:left;
+                width: 40%;
+                height: 100%;
+                margin-left:-15px;
+                
+            }
+
+            .work-card-info .btn-read{
+                display: block;
+                margin: 0 auto;
+                float: none;
+            }
+
+/* FIM WORK */ 
+/* CONTACT */
+.contact-box {
+    width: 100%;
+    
+  }
+    .form-title{
+        font-family: 'Oswald', sans-serif; 
+        font-weight: 100;
+    }
+  .form-contact {
+    width: 100%;
+  }
+  
+  .form-contact-button{
+      display: block;
+  }
+ /* FIM CONTACT */ 
+ 
+/* =============== Views */
+
+section{
+    width: 100%;
+}
+
+.article{
+    width:100%;
+}
+.article-header{
+    padding: 15px;
+}
+.article h1{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 6vw;
+}
+.breadcrumbs{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    color: #b3b2b5;
+}
+    .breadcrumbs a{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        color: #b3b2b5;
+    }
+    .breadcrumbs a:hover{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        color: #ff642e;
+    }
+        .breadcrumbs span{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+        }
+.article-tags{
+padding: 20px 15px 0 15px;
+}
+
+.article-list{
+    width: 100%;
+    margin-bottom: 0;
+
+}
+.article-share{
+    padding: 0 15px 0 15px;
+    margin: 10px 0 50px 0;
+}
+.article-header .card-info-foo{
+    font-size: 3vw;
+}
+    .share-itens{
+        display: inline-block;
+        list-style-type: none;
+        border:1px solid #ece9f0;
+        width:40px;
+        height:40px;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+        .share-itens a{
+            color: #666466;
+        }
+        .share-itens a:hover{
+            color: #313031;
+        }
+.article-img{
+    margin:0 0 10px 0;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+    .article-img img{
+        width: 100%;
+        height:auto;
+    }
+.article-content{
+    padding: 15px;
+}
+
+.article-related{
+
+}
+    .article-related img{
+        float: left;
+        width:40%;
+        height:100px;
+        margin-left: 10px;
+        display: block;
+    }
+    .article-related .col-sm a{
+        float: left;
+        display: block;
+        width: 50%;
+    }
+    .article-related h3{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        color: #666466;
+        font-size: 18px;
+        margin-left:15px;
+    }
+    .article-related h3:hover{
+        color: #b4b1b4;
+    }
+    .article-related h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        color: #666466;
+        margin-left: 15px;
+    }
+        .article-related span{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+        }
+    .article-related .col-sm{
+        margin-bottom: 15px;
+    }
+    .article-related ul{
+        color:#666466;  
+    }
+    
+
+.article-comments{
+    display: block;
+    clear: both;
+    margin: 50px 10px;
+}
+
+/* FIM PAGE VIEW */
+/* PAGE ARTCLES */
+.article-tags{
+    padding: 0;
+  }
+.article-item{
+    
+
+  }
+.article-list{
+    clear: both;
+  }
+
+  .article-title h5{
+    font-family: 'Quattrocento', sans-serif;
+    font-size: 4vw;
+}
+
+/* FIM PAGE ARTCLES */
+}
+
+
+
+
+
+
+/* PAGINATOR */
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+ul.pagination li a.active {
+    background-color: rgb(102, 104, 102);
+    color: white;
+    border: 1px solid rgb(102, 104, 102);;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
